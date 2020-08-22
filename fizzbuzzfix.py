@@ -1,14 +1,15 @@
-def fizzorbuzz(a):
-    if(a%3 == 0):
-        if(a % 5 == 0): 
-            a= "fizzbuzz"
+def fizzorbuzz(num: int):
+    if(num % 3 == 0):
+        if(num % 5 == 0):
+            num = "fizzbuzz"
         else:
-            a= "fizz"
-    elif(a%5 == 0):
-         a= "buzz"
-    return a
+            num = "fizz"
+    elif(num % 5 == 0):
+        num = "buzz"
+    return num
 
-mylist = list(range(1,101))
-fizzbuzz1 = [fizzorbuzz(x) for x in mylist]
 
-print (fizzbuzz1)
+num_list = list(range(1, 101))
+fizzbuzz1 = [fizzorbuzz(x) for x in num_list]
+
+print(fizzbuzz1)
